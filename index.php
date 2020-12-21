@@ -64,10 +64,6 @@
            global $XYLGYield;
            global $XYLDYield;
            global $QYLDYield;
-           // $ticker = null;
-           // if($ticker == null){
-           //     echo "<script language=\"javascript\">alert(\"Ticker can't be empty.\")</script>";
-           // }
            if ($ticker == "QYLG") return $amount * $QYLGYield;
            if ($ticker == "XYLG") return $amount * $XYLGYield;
            if ($ticker == "XYLD") return $amount * $XYLDYield;
@@ -127,20 +123,9 @@
                      <option value="XYLG" <?=$XYLGSelected?>>$XYLG - 50% Covered Call / 50% Growth</option>
                   </select>
                </div>
-               <!-- <div class="form-group col col-sm-12 text-left">-->
-               <!--<label class="text-left text-white">Current Yield / Allocation:</label> -->
-               <!--<button class="text-right" onclick="myFunction(); return false;">➕</button>-->
-
-               <!--<div class="row" id="myDiv" style="font-size:1rem;">-->
-               <!-- <div class="col-lg-3 text-white text-left">$QYLD: <?=$QYLDYield*100?>% 100% Covered Call Allocation</div>-->
-               <!-- <div class="col-lg-3 text-white text-left">$QYLG: <?=$QYLGYield*100?>% 50% Covered Call / 50% Growth</div>-->
-               <!-- <div class="col-lg-3 text-white text-left">$XYLD: <?=$XYLDYield*100?>% 100% Covered Call Allocation</div>-->
-               <!-- <div class="col-lg-3 text-white text-left">$XYLG: <?=$XYLGYield*100?>% 50% Covered Call / 50% Growth</div>-->
-               <!-- </div>-->
-               <!-- </div>-->
+     
                <div class="form-group col col-sm-12 ">
                   <label class="text-white text-left">Amount Invested:</label>
-                  <!--<input type="tel" id="myInput" min="1" max="6" class="form-control"  value="<?=number_format($amountTrimmed,0,'.',',')?>" autofocus name="amount" required>-->
                   <select name="amount" class="col-lg-12" style="height:40px;" required>
                      <option value="$100" <?=$Selected100?>>$100</option>
                      <option value="$1,000" <?=$Selected1000?>>$1,000</option>
@@ -190,16 +175,6 @@
          </p>
       </div>
       </div>
-      <!--  <div class="container-fluid text-center mb-1">-->
-      <!--    <div class="row">-->
-      <!--        <div class="col">-->
-      <!--            <a class="btn btn-md bg-success text-white" href="/links/monthly-covered-call-etfs/">Monthly Covered Call ETFs Calculator</a>-->
-      <!--        </div>-->
-      <!--        <div class="col">-->
-      <!--            <a class="btn btn-md bg-success text-white" href="/links/monthly-dividend-stocks/">Monthly Dividend Stocks Calculator</a>-->
-      <!--        </div>-->
-      <!--    </div>-->
-      <!--</div>-->
       <!-- Back to top -->
       <div id="back-to-top"></div>
       <!-- /Back to top --> <!-- Preloader --> 
